@@ -1,0 +1,29 @@
+# Virtual Environments
+.venv/
+venv/
+ai_env/
+final_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Images
+*.jpg
+*.jpeg
+*.png
+
+# Reports
+*.pdf
+
+# Encrypted files
+encrypted_files/
+encrypted_storage/
+*.bin
+
+# Logs
+*.log
+access_log.txt
+
+# VS Code
+.vscode/

@@ -1,0 +1,38 @@
+{
+    "doctor1": {
+        "password": "1234",
+        "role": "Doctor"
+    },
+    "praga001": {
+        "password": "5678",
+        "role": "Patient"
+    },
+    "": {
+        "password": "",
+        "role": "Patient"
+    },
+    "pra001": {
+        "password": "5678",
+        "role": "Patient"
+    },
+    "rajaa": {
+        "password": "2005",
+        "role": "Patient"
+    },
+    "pragadeeswaran": {
+        "password": "1403",
+        "role": "Patient"
+    },
+    "MHPR Hospital": {
+        "password": "1234",
+        "role": "Admin"
+    },
+    "haatim": {
+        "password": "2004",
+        "role": "Patient"
+    },
+    "Dr prasanth": {
+        "password": "5858",
+        "role": "Doctor"
+    }
+}
