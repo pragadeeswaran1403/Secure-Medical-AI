@@ -8,7 +8,7 @@ import os
 import sys
 import random
 import matplotlib.pyplot as plt
-import pyttsx3
+#import pyttsx3
 
 
 
@@ -81,7 +81,7 @@ from utils.risk import get_risk_level
 
 
 st.set_page_config(page_title="Medical System", layout="wide")
-engine = pyttsx3.init()
+#engine = pyttsx3.init()
 # 🎨 UI
 st.markdown("""
 <style>
@@ -630,11 +630,11 @@ elif st.session_state.logged:
             result_label, confidence = predict_image(path)
             scan = result_label
             st.success(f"🧠 Result: {scan}")
-            try:
-                engine.say(scan)
-                engine.startLoop(False)
-            except:
-                pass
+            #try:
+            #    engine.say(scan)
+             #   engine.startLoop(False)
+            #except:
+             #   pass
 
             st.info(f"📊 Confidence: {round(confidence*100,2)}%")
           
