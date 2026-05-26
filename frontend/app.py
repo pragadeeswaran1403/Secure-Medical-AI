@@ -714,7 +714,7 @@ elif st.session_state.logged:
             password = str(random.randint(100000,999999))
             aes_encrypted = encrypt_aes(dna.encode(), password)
             enc2 = encrypt_data(aes_encrypted)
-
+            os.makedirs("encrypted_storage", exist_ok=True)
             enc_path = f"encrypted_storage/{pid}_encrypted.bin"
             with open(enc_path, "wb") as f:
                 f.write(enc2)
@@ -729,6 +729,7 @@ elif st.session_state.logged:
             st.image(enc_img, clamp=True)
 
             # create encrypted filename
+            os.makedirs("encrypted_files", exist_ok=True)
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             enc_filename = f"encrypted_files/{pid}_{timestamp}.bin"
 
